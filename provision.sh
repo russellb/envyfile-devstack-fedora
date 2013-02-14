@@ -8,7 +8,7 @@ Host *
 EOF
 
 sudo yum update -y
-sudo yum install -y git python-netaddr
+sudo yum install -y git python-netaddr vim-enhanced
 
 git clone https://github.com/openstack-dev/devstack.git
 
