@@ -14,10 +14,6 @@ git clone https://github.com/openstack-dev/devstack.git
 
 cd devstack/
 
-# Disable the qpid notifier in glance until this bug is fixed:
-# https://bugs.launchpad.net/glance/+bug/1100317
-sed -i -e 's/\(iniset $GLANCE_API_CONF DEFAULT notifier_strategy qpid\)/: # \1/' lib/glance
-
 cat<<EOF | tee localrc
 MYSQL_PASSWORD=secret
 SERVICE_TOKEN=secret
